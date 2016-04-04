@@ -11,19 +11,25 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   padding: 0.2em 0;
 }
 
+//Background color
+
+body {
+  background:#DCDDCD;
+}
 
 //Visual styling for hero message
 
 .hero {
-  background: rgb(244, 243, 240);
-  color: #000;
+  background: #F15D58;
+  color: #fff;
   box-sizing: border-box;
-  padding: 15px;
-  border-radius: 9px;
+  padding: 15px 30px;
+  border-radius: 2px;
   font-family: sans-serif;
   line-height: 40px;
   font-weight: bold;
 }
+
 // Flex styling for horizontal & vertical centering
 
 .flex-container {
