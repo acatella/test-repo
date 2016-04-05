@@ -40,7 +40,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:acatella/test-repo.git'
+          remote: 'git@github.com:acatella/test-repo.git',
           branch: 'gh-pages'
         }
       }
