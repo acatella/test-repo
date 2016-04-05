@@ -1,4 +1,4 @@
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -11,34 +11,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   padding: 0.2em 0;
 }
 
-//Background color
+// Site Layout
+@import 'flex_layout';
 
-body {
-  background:#F0F1EE;
-}
+// Variables
+@import 'custom_variables';
 
-//Visual styling for hero message
-
-.hero {
-  background: #F15D58;
-  color: #fff;
-  box-sizing: border-box;
-  padding: 15px 30px;
-  border-radius: 2px;
-  font-family: sans-serif;
-  line-height: 40px;
-  font-weight: bold;
-}
-
-// Flex styling for horizontal & vertical centering
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.flex-item {
-  max-width: 50%;
-}
+// Content
+@import 'content';

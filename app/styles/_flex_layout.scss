@@ -1,0 +1,12 @@
+// Flex styling for horizontal & vertical centering
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-item {
+  max-width: 50%;
+}

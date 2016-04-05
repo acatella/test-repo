@@ -1,0 +1,18 @@
+//Background styling
+
+body {
+  background: $bg-color;
+}
+
+//Visual styling for hero message
+
+.hero {
+  background: $theme-pink;
+  color: $text-color;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  border-radius: 2px;
+  font-family: $font-family-sans-serif;
+  line-height: 40px;
+  font-weight: bold;
+}
