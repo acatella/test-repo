@@ -16,3 +16,8 @@ body {
   line-height: 40px;
   font-weight: bold;
 }
+
+//Apply _button mixin to hero message
+.hero {
+  @include button-variant($text-color,$theme-pink,#ccc);
+}
