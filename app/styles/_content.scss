@@ -7,8 +7,7 @@ body {
 //Visual styling for hero message
 
 .hero {
-  background: $theme-pink;
-  color: $text-color;
+
   box-sizing: border-box;
   padding: 15px 30px;
   border-radius: 2px;
@@ -17,7 +16,15 @@ body {
   font-weight: bold;
 }
 
+.hero:hover {
+  cursor: pointer;
+}
+
 //Apply _button mixin to hero message
-.hero {
-  @include button-variant($text-color,$theme-pink,#ccc);
+.hero-pink {
+  @include button-variant($theme-text,$theme-pink,#ccc);
+}
+
+.hero-blue {
+  @include button-variant($theme-text,$theme-blue,#ccc);
 }
