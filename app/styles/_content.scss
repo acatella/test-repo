@@ -1,8 +1,7 @@
 //Background styling
-
-// body {
-//   background: $bg-color;
-// }
+#body {
+  @include transition(all, 1s, ease);
+}
 
 //Visual styling for hero message
 
@@ -19,8 +18,7 @@
   cursor: pointer;
 }
 
-//Apply _button mixin to hero message
-
+//Theme colors
 .hero-pink {
   background: $theme-pink-bg;
    .hero {

@@ -1,0 +1,7 @@
+// color change transition mixin
+@mixin transition($property, $duration, $timing, $delay) {
+  -webkit-transition: $property $duration $timing $delay;
+  -moz-transition: $property $duration $timing $delay;
+  -o-transition: $property $duration $timing $delay;
+  transition: $property $duration $timing $delay;
+}
