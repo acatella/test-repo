@@ -1,13 +1,12 @@
 //Background styling
 
-body {
-  background: $bg-color;
-}
+// body {
+//   background: $bg-color;
+// }
 
 //Visual styling for hero message
 
 .hero {
-
   box-sizing: border-box;
   padding: 15px 30px;
   border-radius: 2px;
@@ -21,10 +20,31 @@ body {
 }
 
 //Apply _button mixin to hero message
+
 .hero-pink {
-  @include button-variant($theme-text,$theme-pink,#ccc);
+  background: $theme-pink-bg;
+   .hero {
+     @include button-variant($theme-text,$theme-pink,#ccc);
+   }
 }
 
 .hero-blue {
-  @include button-variant($theme-text,$theme-blue,#ccc);
+  background: $theme-blue-bg;
+    .hero {
+      @include button-variant($theme-text,$theme-blue,#ccc);
+    }
+}
+
+.hero-green {
+  background: $theme-green-bg;
+    .hero {
+      @include button-variant($theme-text, $theme-green, #ccc);
+    }
+}
+
+.hero-dawgs {
+  background: $theme-dawgs-bg;
+    .hero {
+      @include button-variant($theme-text, $theme-dawgs, #ccc);
+    }
 }

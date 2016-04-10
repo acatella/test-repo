@@ -1,13 +1,12 @@
-console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
-
 $(document).ready(function() {
 
   //Updates color theme on click
-  var themes = ['hero-blue','hero-pink'];
-  var $changeButton = $('div.hero');
+  var themes = ['hero-blue','hero-pink', 'hero-green', 'hero-dawgs'];
+  var $body = $('div.flex-container');
+  var $trigger = $('div.hero');
 
   function updateTheme() {
-    var curTheme = $changeButton.attr('class').toString();
+    var curTheme = $body.attr('class').toString();
     var newTheme = themes[Math.floor((Math.random()*themes.length))];
     var re = new RegExp(newTheme, "g");
 
@@ -16,11 +15,11 @@ $(document).ready(function() {
     }
 
     else {
-      $changeButton.attr('class', 'hero '+ newTheme);
+      $body.attr('class', 'flex-container '+ newTheme);
     }
   }
-  
-  $changeButton.on('click', function(e) {
+
+  $trigger.on('click', function(e) {
     updateTheme();
   });
 });
