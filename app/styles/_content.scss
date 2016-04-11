@@ -1,6 +1,6 @@
 //Background styling
 #body {
-  @include transition(all, 1s, ease);
+  @include transition(background-color, 2.5s, ease);
 }
 
 //Visual styling for hero message
@@ -44,5 +44,33 @@
   background: $theme-dawgs-bg;
     .hero {
       @include button-variant($theme-text, $theme-dawgs, #ccc);
+    }
+}
+
+.hero-red {
+  background: $theme-red-bg;
+    .hero {
+      @include button-variant($theme-text, $theme-red, #ccc);
+    }
+}
+
+.hero-neon {
+  background: $theme-neon-bg;
+    .hero {
+      @include button-variant($theme-text, $theme-neon, #ccc);
+    }
+}
+
+.hero-xmas {
+  background: $theme-xmas-bg;
+    .hero {
+      @include button-variant($theme-text, $theme-xmas, #ccc);
+    }
+}
+
+.hero-dawn {
+  background: $theme-dawn-bg;
+    .hero {
+      @include button-variant($theme-text, $theme-dawn, #ccc);
     }
 }

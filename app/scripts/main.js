@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   //Updates color theme on click
-  var themes = ['hero-blue','hero-pink', 'hero-green', 'hero-dawgs'];
+  var themes = ['hero-blue','hero-pink', 'hero-green', 'hero-dawgs', 'hero-red', 'hero-dawn','hero-neon', 'hero-xmas'];
   var $body = $('div.flex-container');
   var $trigger = $('div.hero');
 
