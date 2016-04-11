@@ -1,1 +1,0 @@
-"use strict";$(document).ready(function(){function a(){var d=c.attr("class").toString(),e=b[Math.floor(Math.random()*b.length)],f=new RegExp(e,"g");f.test(d)?a():c.attr("class","flex-container "+e)}var b=["hero-blue","hero-pink","hero-green","hero-dawgs"],c=$("div.flex-container"),d=$("div.hero");d.on("click",function(){a()})});
